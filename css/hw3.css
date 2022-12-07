@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    background-color:black;
+}
+
+/* header */
+header{
+    width:85%;
+    height:200px;
+    /* background-image: url(../img/1.jpg); */
+    background-size: cover;
+}
+/* 图片文字 */
+.text1{
+    position: absolute;
+    top:20%;
+    left:35%;
+}
+
+/* 导航 */
+nav{
+    opacity:0.7;
+    text-align: left;
+    z-index: 1;
+}
+li{
+    color: black;
+}
+/* 链接 */
+a{
+    text-decoration-line: none;
+    color: black;
+}
+/* 一级导航 */
+.list1{
+    display: inline-block;
+    background: #eee;
+    border-radius: 6px;
+}
+nav ul li{
+    width:150px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #666;
+}
+nav ul li:hover{
+    background-color: #bfbfbf;
+}
+
+
+/* 二级导航 */
+nav ul li ul li{
+    display: none;
+    float:left;
+    background: #eee;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+nav ul li:hover ul li{
+    display: block;
+    
+}
+
+/* main */
+/* side */
+.sidebar{
+    opacity:0.5;
+    position: fixed;
+    background-color: aliceblue;
+    height:40%;
+    margin-top: 10%;
+    width:10%;
+    border-radius:0px 10px 10px 0px;
+    clear: both;
+    z-index: 10;
+}
+/* main */
+.grid1{
+    grid-template-areas:'a b'
+                        'c c';
+}
+.main1{
+    opacity:initial;
+    margin-top: 10px;
+    opacity:0.5;
+    clear: both;
+    border-radius: 10px;
+    background-color: #b3ffff;
+    width:70%;
+    color: white;
+    position: absolute;
+    top:40%;
+    left:15%;
+    z-index: -1;
+    display: grid;
+}
+.text3{
+    position: relative;
+    left:20%;
+}
+
+
+
+/* footer */
+.footer{
+    background: linear-gradient(to right,#adbb75,#234b91);
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    position: absolute;
+    top:120%;
+    width:100%;
+}

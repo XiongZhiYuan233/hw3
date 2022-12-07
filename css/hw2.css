@@ -1,0 +1,114 @@
+html{
+    background-color: black;
+    color: white;
+}
+body{
+    margin: 0;
+}
+header{
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
+    padding: 15px;
+    padding-bottom: 70px;
+    height: 50px;
+    background: linear-gradient(to right,#b993d6,#8ca6db);
+}
+nav{
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 1rem;
+    transition: padding .2s;
+    background: linear-gradient(to right,#73c8a9,#373b44);
+}
+nav li:hover{
+    padding: 30px 75px;
+}
+
+
+nav li a{
+    text-decoration: none;
+}
+nav li a:link{
+    color: white;
+}
+nav li a:visited{
+    color: blue;
+}
+nav li a:hover{
+    color: #373b44;
+}
+
+main table tr:nth-child(2n+1){
+    background-color:#add100 ;
+}
+main table tr:nth-child(2n+0){
+    background-color:#8ca6db ;
+}
+main table th:nth-child(2n){
+    color: #234b91;
+} 
+main table td:nth-child(2n){
+    color: #234b91;
+} 
+main table th:nth-child(2n+1){
+    color: #b993d6;
+} 
+main table td:nth-child(2n+1){
+    color: #b993d6;
+} 
+table{
+    margin:10px;
+    /* text-align: center; */
+}
+.col1{
+    color: white;
+    
+}
+.col2{
+    color: black;
+}
+
+
+.container{
+    grid-template-columns: 1fr .5fr .5fr;
+    grid-template-rows: repeat(3,auto);
+    column-gap: 50px;
+    grid-template-areas:'a b c'
+                        'd e f'
+                        'g h i';
+}
+.container div{
+    border-radius: 1rem;
+    background-color: #b3b3b3;
+    margin: 10px;
+    padding:10px;
+    text-align: center;
+    box-shadow:3px 2px 5px 2px ;
+}
+
+div{
+    display: grid;
+}
+
+div img{
+    margin:0 auto;
+}
+
+.hr_{
+    margin:10px ;
+    border:0 ;
+    color: #cccccc;
+    background-color: #cccccc;
+    height: .1px;
+}
+
+.f{
+    background: linear-gradient(to right,#adbb75,#234b91);
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
